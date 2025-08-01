@@ -1,0 +1,17 @@
+- Exemplo de rotas
+
+    - quando executado manualmente __name__ = __main__
+    app = Flask(__name__)
+
+    - rota principal
+    @app.route("/")
+    def hello_world():
+        return f"Hello World"
+
+    - rota about (como se fosse outra pagina)
+    @app.route("/about")
+    def about():
+        return f"abouts"
+
+    if __name__ == "__main__":
+        app.run(debug=True)
